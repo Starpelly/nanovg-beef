@@ -1,6 +1,3 @@
 [submodule "example/vendor/raylib-beef"]
 	path = example/vendor/raylib-beef
 	url = https://github.com/starpelly/raylib-beef
-[submodule "native/vendor/nanovg"]
-	path = native/vendor/nanovg
-	url = https://github.com/memononen/nanovg
