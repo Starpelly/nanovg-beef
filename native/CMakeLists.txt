@@ -43,6 +43,7 @@ endif()
 
 # ---- Build the library ----
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+add_definitions(-DNVG_NO_STB) # stb_image might be imported by another library...
 add_library(${PROJECT_NAME} STATIC
     ${SOURCE_DIR}/main.c
     ${NANOVG_SRC}

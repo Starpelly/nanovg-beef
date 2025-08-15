@@ -5,10 +5,10 @@ Dependencies = {corlib = "*", corlib = "*"}
 Name = "nanovg-beef"
 DefaultNamespace = "NanoVG"
 
-[Configs.Debug.Win64]
+[Configs.SharedDebug.Win64]
 LibPaths = ["$(ProjectDir)\\libs\\windows\\Debug\\nanovg_shared.lib"]
 
-[Configs.Release.Win64]
+[Configs.SharedRelease.Win64]
 LibPaths = ["$(ProjectDir)\\libs\\windows\\Release\\nanovg_shared.lib"]
 
 [Configs.StaticDebug.Win64]

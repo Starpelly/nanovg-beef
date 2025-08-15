@@ -3,3 +3,21 @@ Projects = {example = {Path = "."}, nanovg-beef = {Path = ".."}, raylib-beef = {
 
 [Workspace]
 StartupProject = "example"
+
+[Configs.Debug.Win64]
+ConfigSelections = {nanovg-beef = {Config = "SharedDebug"}}
+
+[Configs.Debug.Win32]
+ConfigSelections = {nanovg-beef = {Config = "SharedDebug"}}
+
+[Configs.Release.Win32]
+ConfigSelections = {nanovg-beef = {Config = "SharedRelease"}}
+
+[Configs.Release.Win64]
+ConfigSelections = {nanovg-beef = {Config = "StaticRelease"}, raylib-beef = {Config = "StaticRelease"}}
+
+[Configs.Test.Win32]
+ConfigSelections = {nanovg-beef = {Config = "SharedDebug"}}
+
+[Configs.Test.Win64]
+ConfigSelections = {nanovg-beef = {Config = "SharedDebug"}}
