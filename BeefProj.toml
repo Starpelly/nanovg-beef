@@ -1,0 +1,22 @@
+FileVersion = 1
+Dependencies = {corlib = "*", corlib = "*"}
+
+[Project]
+Name = "nanovg-beef"
+DefaultNamespace = "NanoVG"
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\windows\\Debug\\nanovg_shared.lib"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\windows\\Release\\nanovg_shared.lib"]
+
+[Configs.StaticDebug.Win64]
+BeefLibType = "Static"
+LibPaths = ["$(ProjectDir)\\libs\\windows\\Debug\\nanovg_static.lib"]
+
+[Configs.StaticDebug.Win32]
+BeefLibType = "Static"
+
+[Configs.StaticRelease.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\windows\\Release\\nanovg_static.lib"]
