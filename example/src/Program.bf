@@ -18,6 +18,10 @@ class Program
 			Raylib.BeginDrawing();
 			Raylib.ClearBackground(Raylib.GRAY);
 
+			Raylib.DrawRectangle(0, 0, 32, 32, .(255, 0, 0, 100));
+
+			Rlgl.rlDrawRenderBatchActive();
+
 			NanoVG.nvgBeginFrame(vg, Raylib.GetScreenWidth(), Raylib.GetScreenHeight(), 1.0f);
 
 			paint(vg);
@@ -53,7 +57,7 @@ class Program
 			// Window
 			nvgBeginPath(vg);
 			nvgRoundedRect(vg, x, y, w, h, cornerRadius);
-			nvgFillColor(vg, nvgRGBA(28,30,34,192));
+			nvgFillColor(vg, nvgRGBA(28,30,34,255));
 		//	nvgFillColor(vg, nvgRGBA(0,0,0,128));
 			nvgFill(vg);
 
